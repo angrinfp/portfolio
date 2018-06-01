@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/fb.css">
+    <meta charset="UTF-8">
+    <title>FB</title>
+</head>
+<body>
+<a id="loginfacebook">Ingresar al sistema</a>
+<a class="item-nav" href="home.html">No, gracias</a>
+<div id="user"></div>
+<a id="logoutfacebook">Cerrar sesión</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="scripts/fb.js"></script>
+<script>
+
+    $(document).ready(function(){
+        fbAsyncInit();
+        $('#loginfacebook').click(function(){
+            loginUsingFacebook();
+        });
+        $('#logoutfacebook').click(function(){
+            
+            logoutFacebook();
+            
+        });
+    })
+    
+</script>
+</body>
+</html>
