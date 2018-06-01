@@ -14,26 +14,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/aos.css">
     <link rel="stylesheet" type="text/css" href="css/title.css">
-    <link rel="stylesheet" type="text/css" href="css/loader.css">
     <script src="scripts/modernizr.custom.js"></script>
 </head>
 <body>
 <div class="spinner-wrapper">
 <div id="loading">
-<div id="loading-center">
-<div id="loading-center-absolute">
-<div class="object" id="object_one"></div>
-<div class="object" id="object_two"></div>
-<div class="object" id="object_three"></div>
-<div class="object" id="object_four"></div>
-<div class="object" id="object_five"></div>
-<div class="object" id="object_six"></div>
-<div class="object" id="object_seven"></div>
-<div class="object" id="object_eight"></div>
-<div class="object" id="object_big"></div>
-</div>
-</div>
- 
 </div>
 </div>
 
@@ -152,18 +137,20 @@
 AOS.init();
 
 $(document).ready(function() {
-    $('header').midnight();∫
+    $('header').midnight();
     $("#os-phrases > h1").lettering('words').children("span").lettering().children("span").lettering();
-//Preloader
-$(window).on("load", function() {
-    
-preloaderFadeOutTime = 300;
-function hidePreloader() {
-    var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
-});
+    //Preloader
+    $(window).on("load", function() {
+        
+    preloaderFadeOutTime = 300;
+    function hidePreloader() {
+    setTimeout(function(){
+        var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+            },500);
+    }
+    hidePreloader();
+    });
 });
 </script>
 </body>

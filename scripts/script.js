@@ -1,8 +1,3 @@
-$(document).ready(function(){
-  // Change this to the correct selector.
-  
-});
-
 function setup() {
  var mycanvas = createCanvas(windowWidth, windowHeight,  WEBGL);
  mycanvas.parent('inicio');
