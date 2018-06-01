@@ -48,29 +48,13 @@ function draw() {
     rotateX(frameCount * 0.01);
     translate(100, 50);
     sphere(3);
-
-    /*
-    rotateX(frameCount * 0.04);
-    rotateY(frameCount * 0.04);
-    torus(50, 2, 4, 3);
-
-    rotateX(frameCount * 0.05);
-    rotateY(frameCount * 0.05);
-    torus(80, 2, 4, 3);
-
-    rotateX(frameCount * 0.06);
-    rotateY(frameCount * 0.06);
-    torus(100, 2, 4, 3);
-
-    rotateX(frameCount * 0.07);
-    rotateY(frameCount * 0.07);
-    torus(140, 2, 4, 3);
-
-    rotateX(frameCount * 0.08);
-    rotateY(frameCount * 0.08);
-    torus(160, 2, 4, 3);
-    */
 }
+
+$('.txt').html(function(i, html) {
+  var chars = $.trim(html).split("");
+
+  return '<span>' + chars.join('</span><span>') + '</span>';
+});
 
 $(function() {
     var $window = $(window),

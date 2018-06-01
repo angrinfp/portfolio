@@ -1,33 +1,42 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/fb.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Designer based in Lima, Perú" />
+    <meta name="keywords" content="web design, design, ui design,digital design" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fb.css">
     <title>FB</title>
 </head>
 <body>
-<a id="loginfacebook">Ingresar al sistema</a>
-<a class="item-nav" href="home.html">No, gracias</a>
-<div id="user"></div>
-<a id="logoutfacebook">Cerrar sesión</a>
+	<div class="box-wrap">
+		<div class="box shadow">
+			<div class="box2">
+				<span class="txt1 txt anim-text-flow">Hello!</span>
+				<span class="txt2 txt anim-text-flow">wanna keep in contact?</span>
+				<a id="loginfacebook">Sure thing!</a>
+				<a class="item-nav" href="home.html">Maybe later...</a>
+				<div id="user"></div>
+				<a id="logoutfacebook">log out</a>
+			</div>
+		</div>
+	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="scripts/fb.js"></script>
+<script src="scripts/script.js"></script>
 <script>
-
     $(document).ready(function(){
         fbAsyncInit();
         $('#loginfacebook').click(function(){
             loginUsingFacebook();
         });
-        $('#logoutfacebook').click(function(){
-            
-            logoutFacebook();
-            
+        $('#logoutfacebook').click(function(){            
+            logoutFacebook();    
         });
-    })
-    
+    })  
 </script>
 </body>
 </html>
