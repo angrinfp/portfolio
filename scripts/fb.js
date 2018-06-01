@@ -2,7 +2,7 @@ window.fbAsyncInit = function() {
     $.ajaxSetup({ cache: true });
     $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
-      appId: '334367743627528',
+      appId: '2019650064955774',
       cookie     : true,
       version: 'v2.8' // or v2.1, v2.2, v2.3, ...
     }); 
