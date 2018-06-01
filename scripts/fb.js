@@ -74,7 +74,7 @@ function accesoUser(a) {
     //console.log('Welcome!  Fetching your information.... ');
     FB.api('/me',{fields:'id, name, first_name, last_name, email'}, function(response) {
         //console.log('Successful login for: ' + response.name);
-        document.getElementById('user').innerHTML = 'Bienvenido, ' + response.name + '!';
+        document.getElementById('user').innerHTML = 'Welcome, ' + response.name + '!';
         
     });
 }
