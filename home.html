@@ -158,10 +158,8 @@ $(window).on("load", function() {
     
 preloaderFadeOutTime = 300;
 function hidePreloader() {
-setTimeout(function(){
     var preloader = $('.spinner-wrapper');
 preloader.fadeOut(preloaderFadeOutTime);
-        },800);
 }
 hidePreloader();
 });
