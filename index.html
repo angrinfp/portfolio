@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/fb.css">
-    <title>FB</title>
+    <title>Welcome!</title>
 </head>
 <body>
 	<div class="box-wrap">
@@ -25,18 +25,20 @@
 	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="scripts/fb.js"></script>
 <script src="scripts/script.js"></script>
+<script src="scripts/fb.js"></script>
 <script>
     $(document).ready(function(){
         fbAsyncInit();
         $('#loginfacebook').click(function(){
             loginUsingFacebook();
         });
-        $('#logoutfacebook').click(function(){            
-            logoutFacebook();    
+        $('#logoutfacebook').click(function(){
+            
+            logoutFacebook();
+            
         });
-    })  
+    }) 
 </script>
 </body>
 </html>
